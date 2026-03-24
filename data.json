@@ -1,8 +1,10 @@
 {
-  "name": "Your Name",
-  "bio": "Put your bio here",
-  "avatar": "https://i.pravatar.cc/150",
-  "banner": "https://picsum.photos/800/300",
+  "profile": {
+    "name": "Alex Rivera",
+    "bio": "Digital creator • Links below",
+    "avatar": "https://i.pravatar.cc/150",
+    "banner": "https://picsum.photos/800/300"
+  },
 
   "sections": [
     {
@@ -10,15 +12,15 @@
       "links": [
         {
           "title": "Instagram",
-          "url": "https://instagram.com/"
+          "url": "https://instagram.com"
         },
         {
           "title": "TikTok",
-          "url": "https://tiktok.com/"
+          "url": "https://tiktok.com"
         },
         {
           "title": "YouTube",
-          "url": "https://youtube.com/"
+          "url": "https://youtube.com"
         }
       ]
     },

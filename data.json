@@ -1,0 +1,39 @@
+{
+  "name": "Your Name",
+  "bio": "Put your bio here",
+  "avatar": "https://i.pravatar.cc/150",
+  "banner": "https://picsum.photos/800/300",
+
+  "sections": [
+    {
+      "title": "Social Media",
+      "links": [
+        {
+          "title": "Instagram",
+          "url": "https://instagram.com/"
+        },
+        {
+          "title": "TikTok",
+          "url": "https://tiktok.com/"
+        },
+        {
+          "title": "YouTube",
+          "url": "https://youtube.com/"
+        }
+      ]
+    },
+    {
+      "title": "My Links",
+      "links": [
+        {
+          "title": "My Website",
+          "url": "https://example.com"
+        },
+        {
+          "title": "My Store",
+          "url": "https://example.com/store"
+        }
+      ]
+    }
+  ]
+}

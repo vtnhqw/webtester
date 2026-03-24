@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Link Page</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f0f1a;
+      color: white;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .banner img {
+      width: 100%;
+      border-radius: 0 0 20px 20px;
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 20px;
+      margin-top: -50px;
+      border: 3px solid #0f0f1a;
+    }
+
+    h1 {
+      margin: 10px 0 5px;
+    }
+
+    p {
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    .section {
+      margin-top: 25px;
+      text-align: left;
+    }
+
+    .section-title {
+      font-size: 12px;
+      color: #666;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px;
+      margin-bottom: 10px;
+      background: #1a1a2e;
+      border-radius: 10px;
+      text-decoration: none;
+      color: white;
+      transition: 0.2s;
+    }
+
+    .link:hover {
+      background: #27293d;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+<div class="container" id="app">Loading...</div>
+
+<script>
+async function loadData() {
+  const res = await fetch('data.json');
+  return await res.json();
+}
+
+function createLink(link) {
+  return `
+    <a class="link" href="${link.url}" target="_blank">
+      <span>${link.title}</span>
+      <span>→</span>
+    </a>
+  `;
+}
+
+async function init() {
+  const data = await loadData();
+  const app = document.getElementById('app');
+
+  app.innerHTML = `
+    <div class="banner">
+      <img src="${data.banner}" />
+    </div>
+
+    <img class="avatar" src="${data.avatar}" />
+
+    <h1>${data.name}</h1>
+    <p>${data.bio}</p>
+
+    ${data.sections.map(section => `
+      <div class="section">
+        <div class="section-title">${section.title}</div>
+        ${section.links.map(createLink).join('')}
+      </div>
+    `).join('')}
+  `;
+}
+
+init();
+</script>
+
+</body>
+</html>

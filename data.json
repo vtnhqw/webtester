@@ -1,0 +1,54 @@
+{
+  "profile": {
+    "name": "Alex Rivera",
+    "bio": "Digital Creator & Software Engineer based in San Francisco. Building the future of the web.",
+    "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=200&h=200&fit=crop",
+    "banner": ""
+  },
+  "navTabs": [
+    { "id": "all", "label": "All" },
+    { "id": "social", "label": "Social" },
+    { "id": "finance", "label": "Finance" },
+    { "id": "referrals", "label": "Referrals" }
+  ],
+  "sections": [
+    {
+      "id": "social",
+      "label": "Socials",
+      "dot": "#a78bfa",
+      "links": [
+        { "icon": "instagram", "text": "Instagram", "label": "@alex.rivera", "url": "https://instagram.com" },
+        { "icon": "tiktok", "text": "TikTok", "label": "2.4M", "url": "https://tiktok.com" },
+        { "icon": "youtube", "text": "YouTube", "label": "Subscribe", "url": "https://youtube.com" },
+        { "icon": "x", "text": "X / Twitter", "url": "https://x.com" },
+        { "icon": "github", "text": "GitHub", "url": "https://github.com" },
+        { "icon": "linkedin", "text": "LinkedIn", "url": "https://linkedin.com" }
+      ]
+    },
+    {
+      "id": "referrals",
+      "label": "Referrals & Finance",
+      "dot": "#60a5fa",
+      "links": [
+        { "icon": "wise", "text": "Wise", "label": "Bonus inside", "url": "https://wise.com" },
+        { "icon": "revolut", "text": "Revolut", "label": "Free Card", "url": "https://revolut.com" },
+        { "icon": "moomoo", "text": "Moomoo", "label": "Free Stocks", "url": "#" },
+        { "icon": "webull", "text": "Webull", "label": "5 Free Stocks", "url": "#" },
+        { "icon": "mplus", "text": "M+ Global", "url": "#" },
+        { "icon": "aeonbank", "text": "Aeon Bank", "url": "#" },
+        { "icon": "setel", "text": "Setel", "url": "#" }
+      ]
+    },
+    {
+      "id": "blog",
+      "label": "Content",
+      "dot": "#34d399",
+      "links": [
+        { "icon": "blog", "text": "Personal Blog", "url": "#" },
+        { "icon": "newsletter", "text": "Weekly Newsletter", "label": "Join 10k+", "url": "#" },
+        { "icon": "tradingview", "text": "TradingView Setup", "url": "#" },
+        { "icon": "gmail", "text": "Contact Me", "url": "mailto:hello@alexrivera.com" }
+      ]
+    }
+  ]
+}
